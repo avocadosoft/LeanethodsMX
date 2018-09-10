@@ -40,23 +40,23 @@ const Navbar = props => {
               Methods
             </Link>
 
-            <Link to="/methods" className={classes.link}>
+            <Link to="/consulting-facilitating" className={classes.link}>
               Consulting & Facilitating
             </Link>
 
-            <Link to="/methods" className={classes.link}>
+            <Link to="/training" className={classes.link}>
               Training
             </Link>
 
-            <Link to="/methods" className={classes.link}>
+            <Link to="/resources" className={classes.link}>
               Insights & Resources
             </Link>
 
-            <Link to="/methods" className={classes.link}>
+            <Link to="/about" className={classes.link}>
               About
             </Link>
 
-            <Link to="/methods" className={classes.link}>
+            <Link to="/contact-us" className={classes.link}>
               Contact
             </Link>
           </span>

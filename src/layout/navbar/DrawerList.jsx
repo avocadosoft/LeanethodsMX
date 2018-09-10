@@ -32,42 +32,57 @@ const SimpleList = props => {
         <ListItemText primary="Home" />
       </ListItem>
 
-      <ListItem button component={Link} to="/" className={classes.link}>
+      <ListItem button component={Link} to="/methods" className={classes.link}>
         <ListItemIcon>
           <SettingsIcon />
         </ListItemIcon>
         <ListItemText primary="Methods" />
       </ListItem>
 
-      <ListItem button component={Link} to="/" className={classes.link}>
+      <ListItem
+        button
+        component={Link}
+        to="/consulting-facilitating"
+        className={classes.link}
+      >
         <ListItemIcon>
           <MessageIcon />
         </ListItemIcon>
         <ListItemText primary="Consulting & Faculting" />
       </ListItem>
 
-      <ListItem button component={Link} to="/" className={classes.link}>
+      <ListItem button component={Link} to="/training" className={classes.link}>
         <ListItemIcon>
           <SchoolIcon />
         </ListItemIcon>
         <ListItemText primary="Training" />
       </ListItem>
 
-      <ListItem button component={Link} to="/" className={classes.link}>
+      <ListItem
+        button
+        component={Link}
+        to="/resources"
+        className={classes.link}
+      >
         <ListItemIcon>
           <BookIcon />
         </ListItemIcon>
         <ListItemText primary="Insights & Resources" />
       </ListItem>
 
-      <ListItem button component={Link} to="/" className={classes.link}>
+      <ListItem button component={Link} to="/about" className={classes.link}>
         <ListItemIcon>
           <InfoIcon />
         </ListItemIcon>
         <ListItemText primary="About" />
       </ListItem>
 
-      <ListItem button component={Link} to="/" className={classes.link}>
+      <ListItem
+        button
+        component={Link}
+        to="/contact-us"
+        className={classes.link}
+      >
         <ListItemIcon>
           <PeopleIcon />
         </ListItemIcon>

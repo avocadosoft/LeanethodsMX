@@ -14,11 +14,13 @@ const Footer = props => {
   return (
     <footer className={classes.root}>
       <div className="container">
-        <img
-          src={footerLogo}
-          alt="footer-logo"
-          className={classes.footerLogo}
-        />
+        <Link to="/">
+          <img
+            src={footerLogo}
+            alt="footer-logo"
+            className={classes.footerLogo}
+          />
+        </Link>
 
         <Grid container spacing={24}>
           <Grid item xs={6} md={4} lg={2}>
@@ -51,7 +53,7 @@ const Footer = props => {
             <Typography
               className={classes.footerLink}
               component={Link}
-              to="/about"
+              to="/resources"
             >
               Insights & Resources
             </Typography>
@@ -67,7 +69,7 @@ const Footer = props => {
             <Typography
               className={classes.footerLink}
               component={Link}
-              to="/contact"
+              to="/contact-us"
             >
               Contact
             </Typography>

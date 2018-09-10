@@ -25,11 +25,7 @@ const theme = createMuiTheme({
   },
   typography: {
     // Use the system font instead of the default Roboto font.
-    // fontFamily: "Roboto Slab",
-    button: {
-      fontFamily: "Roboto"
-    },
-    body1: {}
+    fontFamily: "googleSansRegular"
   }
 });
 
