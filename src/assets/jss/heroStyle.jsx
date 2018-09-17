@@ -2,8 +2,12 @@
 
 import homeHero from "../img/home-hero.jpg";
 
+import { colors } from "./colors";
+
 const heroStyle = theme => ({
-  root: {},
+  root: {
+    color: "white"
+  },
   hero: {
     backgroundImage: "url(" + homeHero + ")",
     backgroundSize: "cover",
@@ -16,6 +20,7 @@ const heroStyle = theme => ({
     color: "white"
   },
   h1: {
+    color: "white",
     fontFamily: "googleSansBold",
     fontSize: "64px",
     marginBottom: "10px",
@@ -24,6 +29,7 @@ const heroStyle = theme => ({
     }
   },
   h3: {
+    color: "white",
     WebkitFontSmoothing: "antialiased",
     fontSize: "40px",
     lineHeight: "44px",
@@ -37,6 +43,7 @@ const heroStyle = theme => ({
     height: "28px"
   },
   p: {
+    color: "white",
     maxWidth: "715px",
     WebkitFontSmoothing: "antialiased",
     [theme.breakpoints.down("sm")]: {
@@ -47,7 +54,7 @@ const heroStyle = theme => ({
   innerBottom: {
     width: "100%",
     maxWidth: "1071px",
-    backgroundColor: "#001F2F",
+    backgroundColor: colors.blue,
     padding: "80px 0px",
     fontSize: "24px",
     color: "white"

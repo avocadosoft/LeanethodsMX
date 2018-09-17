@@ -1,9 +1,6 @@
 import React, { Component, Fragment } from "react";
-import PropTypes from "prop-types";
-// Styles
-import leftDrawerStyle from "../../assets/jss/leftDrawerStyle";
 // Material UI
-import { Drawer, withStyles } from "@material-ui/core";
+import { Drawer } from "@material-ui/core";
 // Components
 import DrawerList from "./DrawerList";
 
@@ -33,10 +30,8 @@ class LeftDrawer extends Component {
   };
 
   render() {
-    const { classes } = this.props;
-
     const sideList = (
-      <div className={classes.list}>
+      <div>
         <DrawerList />
       </div>
     );
@@ -46,7 +41,6 @@ class LeftDrawer extends Component {
         <Drawer
           open={this.state.left}
           onClose={this.toggleDrawer("left", false)}
-          className={classes.root}
         >
           <div
             tabIndex={0}
@@ -62,8 +56,4 @@ class LeftDrawer extends Component {
   }
 }
 
-LeftDrawer.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(leftDrawerStyle)(LeftDrawer);
+export default LeftDrawer;

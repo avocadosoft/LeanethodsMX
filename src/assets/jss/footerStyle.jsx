@@ -4,7 +4,7 @@ import { colors } from "./colors.jsx";
 
 const footerStyle = theme => ({
   root: {
-    backgroundColor: colors.footerBackgroundColor,
+    backgroundColor: colors.blue,
     color: theme.palette.secondary.main,
     marginTop: "50px",
     bottom: "0",
