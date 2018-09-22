@@ -4,6 +4,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 
 const colors = {
   blue: "#001F2F",
+  yellow: "#FFCB5B",
   hoverColor: "#c2c2c2",
   footerHeader: "rgba(255, 255, 255, 0.5)",
   textColor: "#001F2F"
@@ -21,7 +22,7 @@ const theme = createMuiTheme({
       light: "#ffffff",
       main: "#ffffff",
       dark: "#ffffff",
-      contrastText: "#f00"
+      contrastText: "#000000"
     }
   },
   typography: {

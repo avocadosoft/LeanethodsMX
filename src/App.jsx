@@ -7,7 +7,7 @@ import { theme } from "./assets/jss/colors";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Components
-import { Landing } from "./components";
+import { Landing, Methods } from "./components";
 
 class App extends Component {
   render() {
@@ -18,6 +18,7 @@ class App extends Component {
             <Navbar />
             <Switch>
               <Route exact path="/" component={Landing} />
+              <Route exact path="/methods" component={Methods} />
             </Switch>
             <Footer />
           </Fragment>

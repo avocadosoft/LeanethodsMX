@@ -4,14 +4,20 @@ import landingRight from "../img/landingRight.png";
 
 const landingMethodsStyle = theme => ({
   root: {
-    paddingTop: "100px",
+    paddingTop: "50px",
     marginBottom: "100px",
     overflow: "hidden",
-    "@media (min-width: 1100px)": {
-      marginTop: "100px",
+    "@media (min-width: 1120px)": {
+      paddingTop: "50px",
       backgroundImage: "url(" + landingRight + ")",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "right bottom",
+      backgroundSize: "47%"
+    },
+    "@media (min-width: 1400px)": {
+      backgroundImage: "url(" + landingRight + ")",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "right top",
       backgroundSize: "47%"
     }
   },

@@ -3,7 +3,6 @@
 const collaborateWithUsStyle = theme => ({
   root: {
     marginTop: "100px",
-    marginBottom: "100px",
     backgroundColor: "transparent"
   },
   video: {

@@ -5,9 +5,6 @@ import homeHero from "../img/home-hero.jpg";
 import { colors } from "./colors";
 
 const heroStyle = theme => ({
-  root: {
-    color: "white"
-  },
   hero: {
     backgroundImage: "url(" + homeHero + ")",
     backgroundSize: "cover",
@@ -16,8 +13,7 @@ const heroStyle = theme => ({
   },
   heroContent: {
     position: "relative",
-    marginTop: "-520px",
-    color: "white"
+    marginTop: "-520px"
   },
   h1: {
     color: "white",
@@ -50,7 +46,6 @@ const heroStyle = theme => ({
       margin: "20px auto"
     }
   },
-  heroBottom: {},
   innerBottom: {
     width: "100%",
     maxWidth: "1071px",

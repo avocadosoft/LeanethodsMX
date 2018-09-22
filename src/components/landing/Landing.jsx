@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import Partners from "./Partners";
 import CollaborateWithUs from "./CollaborateWithUs";
 import LandingMethods from "./LandingMethods";
+import BusinessStregyModel from "./BusinessStrategyModel";
 
 const Landing = () => {
   return (
@@ -12,6 +13,7 @@ const Landing = () => {
       <Partners />
       <CollaborateWithUs />
       <LandingMethods />
+      <BusinessStregyModel />
     </Fragment>
   );
 };
