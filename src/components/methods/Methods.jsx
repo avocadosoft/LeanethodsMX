@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 
 // Components
 import Banner from "../sharedComponents/Banner";
+import Quote from "./Quote";
+import Cards from "./Cards";
 
 const Methods = () => {
   return (
@@ -16,6 +18,8 @@ const Methods = () => {
                   and it is impossible for you to truly have confidence in what
                   you are getting for your investment.`}
       />
+      <Quote />
+      <Cards />
     </Fragment>
   );
 };

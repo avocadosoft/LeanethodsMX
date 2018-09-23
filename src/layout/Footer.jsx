@@ -37,7 +37,7 @@ const Footer = props => {
             <Typography
               className={classes.footerLink}
               component={Link}
-              to="/consulting-facilitating"
+              to="/consulting"
             >
               Consulting & Facilitating
             </Typography>

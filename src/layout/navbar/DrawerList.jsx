@@ -42,7 +42,7 @@ const SimpleList = props => {
       <ListItem
         button
         component={Link}
-        to="/consulting-facilitating"
+        to="/consulting"
         className={classes.link}
       >
         <ListItemIcon>

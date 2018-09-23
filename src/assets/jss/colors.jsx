@@ -7,7 +7,8 @@ const colors = {
   yellow: "#FFCB5B",
   hoverColor: "#c2c2c2",
   footerHeader: "rgba(255, 255, 255, 0.5)",
-  textColor: "#001F2F"
+  textColor: "#001F2F",
+  lightBlue: "#5786A5"
 };
 
 const theme = createMuiTheme({

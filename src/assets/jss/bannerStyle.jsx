@@ -21,6 +21,7 @@ const bannerStyle = theme => ({
     fontSize: "64px",
     marginBottom: "10px",
     marginTop: "-15px",
+    marginRight: "20px",
     [theme.breakpoints.down("sm")]: {
       fontSize: "46px",
       marginTop: "20px",
@@ -36,6 +37,9 @@ const bannerStyle = theme => ({
     fontSize: "24px",
     padding: "30px 0px",
     WebkitFontSmoothing: "antialiased",
+    [theme.breakpoints.up("sm")]: {
+      minHeight: "100px"
+    },
     [theme.breakpoints.only("md")]: {
       width: "90%"
     },

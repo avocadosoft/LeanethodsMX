@@ -8,10 +8,10 @@ import { withStyles, Grid } from "@material-ui/core";
 import dots from "../../assets/img/hero-dots.png";
 
 class Banner extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      img: require("../../assets/img/" + "methods-banner" + ".jpg")
+      img: require(`../../assets/img/${this.props.img}`)
     };
   }
 
