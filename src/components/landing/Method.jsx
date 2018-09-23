@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 
 class Method extends Component {
   render() {
-    const { classes } = this.props;
+    const { classes, img } = this.props;
     return (
       <div className={classes}>
         <img
-          src={require("../../assets/img/" + this.props.img + ".png")}
+          src={require("../../assets/img/" + img + ".png")}
           alt={this.props.img}
         />
         <h1>{this.props.name}</h1>

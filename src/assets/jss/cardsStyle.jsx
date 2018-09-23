@@ -2,13 +2,10 @@
 
 import { colors } from "./colors";
 
-const cardStyle = theme => ({
+const cardStyle = () => ({
   root: {
-    margin: "0 5%"
-  },
-  card: {},
-  media: {
-    height: 140
+    backgroundColor: colors.grayBackground,
+    paddingBottom: "50px"
   }
 });
 

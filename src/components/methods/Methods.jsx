@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 // Components
 import Banner from "../sharedComponents/Banner";
+import BusinessStregyModel from "../sharedComponents/BusinessStrategyModel";
 import Quote from "./Quote";
 import Cards from "./Cards";
 
@@ -20,6 +21,7 @@ const Methods = () => {
       />
       <Quote />
       <Cards />
+      <BusinessStregyModel />
     </Fragment>
   );
 };

@@ -1,48 +1,47 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+// Styles
+import infoCardStyle from "../../assets/jss/infoCardStyle";
+// Material UI
+import {
+  withStyles,
+  Card,
+  CardActionArea,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography
+} from "@material-ui/core";
 
-const styles = {
-  card: {
-    maxWidth: 345
-  },
-  media: {
-    height: 140
-  }
-};
+import { Link } from "react-router-dom";
 
-const MediaCard = props => {
-  const { classes } = props;
+const InfoCard = props => {
+  const { classes, title, text, img, link } = props;
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      <CardActionArea component={Link} to={link}>
         <CardMedia
           className={classes.media}
-          image={require("../../assets/img/card-lean.jpg")}
+          image={require("../../assets/img/" + img)}
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="headline" component="h2">
-            Lizard
+          <Typography
+            gutterBottom
+            variant="headline"
+            component="h2"
+            className={classes.h2}
+          >
+            {title}
           </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography component="p" className={classes.p}>
+            {text}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" component={Link} to={link}>
           Learn More
         </Button>
       </CardActions>
@@ -50,8 +49,8 @@ const MediaCard = props => {
   );
 };
 
-MediaCard.propTypes = {
+InfoCard.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(MediaCard);
+export default withStyles(infoCardStyle)(InfoCard);

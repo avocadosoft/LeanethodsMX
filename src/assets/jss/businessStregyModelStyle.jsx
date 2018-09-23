@@ -27,13 +27,17 @@ const businessStregyModelStyle = theme => ({
     display: "block",
     margin: "auto",
     [theme.breakpoints.down("sm")]: {
-      marginTop: "30px"
+      display: "none"
     }
   },
   button: {
     color: colors.blue,
     backgroundColor: colors.yellow,
     transition: "0.3s",
+    height: "40px",
+    [theme.breakpoints.down("xs")]: {
+      width: "100%"
+    },
     "&:hover": {
       backgroundColor: colors.yellow,
       opacity: "0.8"
